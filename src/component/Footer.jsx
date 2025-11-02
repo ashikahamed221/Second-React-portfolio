@@ -5,6 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 
+
 const Footer = () => {
   return (
     <div className='border-b border-neutral-900 pb-20'>
