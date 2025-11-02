@@ -60,7 +60,7 @@ const Contact = () => {
 
             </div>
             <div className='mt-25 flex flex-col items-center'>
-                <form onSubmit={handlesubmit} className=' p-6 rounded-2xl border '>
+                <form onSubmit={handlesubmit} className='p-4 md:p-6 rounded-2xl'>
 
                     <label htmlFor="" className='flex flex-row'>Name</label>
                     <input type="text"
@@ -77,7 +77,7 @@ const Contact = () => {
 
                     <textarea name="message"
                         value={message} onChange={(e) => setmessage(e.target.value)}
-                        required className='w-59 mt-4 fonts md:w-100 bg-neutral-300 p-2 text-black rounded h-50' placeholder='Your Message'></textarea>
+                        required className='w-full mt-4 fonts md:w-100 bg-neutral-300 p-2 text-black rounded h-50' placeholder='Your Message'></textarea>
                     <Toaster />
                     <button type='submit' className='flex flex-row fonts gap-2 mt-4 bg-gradient-to-r from-rose-500 via-indigo-700 to-red-500 px-4 py-2 rounded-lg w-full justify-center'>Send Message
                         <IoIosSend className='text-2xl flex flex-col justify-center fonts space-x-3' /></button>
