@@ -8,7 +8,6 @@ import { animate, motion } from 'framer-motion'
 import { VscVscode } from "react-icons/vsc";
 import { FaGitAlt } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
-import { RiVercelLine } from "react-icons/ri";
 import { SiCanva } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { CgVercel } from "react-icons/cg";

@@ -1,5 +1,3 @@
-import React from 'react'
-import Expreience from './Expreience'
 import { PROJECTS } from '../constans/index.js'
 import { motion } from 'framer-motion'
 const Project = () => {
