@@ -1,5 +1,5 @@
 import React from 'react'
-import profilpic from '../assets/untitled design.png'
+import profilpic from '../assets/untitleddesign.png'
 import { ABOUT_TEXT } from '../constans'
 import { motion } from 'framer-motion'
 const About = () => {
