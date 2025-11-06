@@ -59,7 +59,7 @@ export const PROJECTS = [
   {
     title: "AI Color Palette App",
     image: project1,
-    description: "An intelligent color palette generator powered by AI. This web app helps designers and developers discover beautiful, cohesive color schemes based on natural language prompts. Built with React +",
+    description: "An intelligent color palette generator powered by AI. This web app helps designers and developers discover beautiful, cohesive color schemes based on natural language prompts.",
     technologies: ["React+vite", "OpenRouterAPI", "TailwindCSS"],
     link:'#',
     git:'https://github.com/ashikahamed221/AI-Color-palette'
