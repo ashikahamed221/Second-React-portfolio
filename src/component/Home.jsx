@@ -10,7 +10,7 @@ const Home = () => {
     whileInView={{opacity:1,y:0}}
     initial={{opacity:0,y:-100}}
     transition={{duration:1}}
-    className='md:text-4xl fonts flex flex-col'>Hi there 👋 It's me J.ASHIK AHAMED</motion.h1>
+    className='md:text-4xl fonts flex flex-col'>Hi there 👋 It's me ASHIK AHAMED</motion.h1>
     
     <motion.p 
      whileInView={{opacity:1,y:0}}

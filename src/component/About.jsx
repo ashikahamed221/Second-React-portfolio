@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 const About = () => {
   return (
     <div className='border-b border-neutral-900 pb-4'>
-      <motion.h2 
-      whileInView={{opacity:1,y:0}}
-      initial={{opacity:0,y:-100}}
-      transition={{duration:0.5}}
-      className='my-20 text-center fonts text-4xl'>
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+        className='my-20 text-center fonts text-4xl'>
         About
         <span className='text-neutral-500 fonts'> Me</span>
       </motion.h2>
@@ -31,8 +31,11 @@ const About = () => {
           <div className=''>
             <p className='my-2 max-w-xl fonts py-6 md:mt-10'>{ABOUT_TEXT}</p>
           </div>
+         
         </motion.div>
+
       </div>
+
     </div>
   )
 }

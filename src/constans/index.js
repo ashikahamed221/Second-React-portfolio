@@ -1,6 +1,7 @@
 import project1 from "../assets/AI Paletee.jpg";
 import project2 from "../assets/Giphy.png";
 import project3 from "../assets/Notenest.jpg";
+import project4 from "../assets/Screenshot 2025-08-02 073146.png"
 
 export const HERO_CONTENT = `
 Full Stack Developer Passionate about crafting interactive and user-friendly web experiences
@@ -60,6 +61,8 @@ export const PROJECTS = [
     image: project1,
     description: "An intelligent color palette generator powered by AI. This web app helps designers and developers discover beautiful, cohesive color schemes based on natural language prompts. Built with React +",
     technologies: ["React+vite", "OpenRouterAPI", "TailwindCSS"],
+    link:'#',
+    git:'https://github.com/ashikahamed221/AI-Color-palette'
   },
   {
     title: "Giphy Search",
@@ -67,6 +70,8 @@ export const PROJECTS = [
     description:
       "Welcome to my Giphy-powered React app! This project lets users search for GIFs using the Giphy API, view results instantly, and enjoy a smooth user experience with toast notifications and a custom home page.",
     technologies: ["React+vite", "TailwindCSS", "RestAPI"],
+    link:'#',
+    git:'https://github.com/ashikahamed221/Gifs-intern-project'
   },
   {
     title: "Notes App",
@@ -74,14 +79,18 @@ export const PROJECTS = [
     description:
       "A simple and fast note-taking app built with React + Vite, TypeScript, and TailwindCSS, with real-time synchronization powered by Firebase Firestore. Users can easily add and delete notes, and all changes are instantly updated across sessions using Firestore onSnapshot feature.",
     technologies: ["React+vite", "TailwindCSS", "Firebase"],
+    link: 'http://localhost3000',
+    git : 'https://github.com/ashikahamed221/Note'
   },
-//   {
-//     title: "Blogging Platform",
-//     image: project4,
-//     description:
-//       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-//     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-//   },
+  {
+    title: "DM Delay",
+    image: project4,
+    description:
+      "A simple App for sending message, delay a message and cancel the message in the given time. Build this app using React + vite, TailwindCSS, shadcn UI.",
+    technologies: ["React+vite","TailwindCSS","ShadcnUI"],
+    link: "#",
+    git: "https://github.com/ashikahamed221/DM-delay"
+  },
 ];
 
 export const CONTACT = {

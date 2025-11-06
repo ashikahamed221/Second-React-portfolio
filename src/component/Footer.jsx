@@ -4,6 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion'
+import { CONTACT } from '../constans'
 
 
 const Footer = () => {
@@ -23,15 +24,31 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 1, y: -100 }}
             transition={{ duration: 0.5 }}
-            className='font-bold mt-8 md:mt-2'>Quick Links</motion.h2>
-          <ul
+            className='font-bold mt-8 md:mt-2'>Quick Contacts</motion.h2>
+          {/* <ul
             className='mt-4 fonts text-neutral-300'>
             <a href=""><li className='hover:text-rose-500'>Home</li></a>
             <a href=""><li className='hover:text-rose-500'>About</li></a>
             <a href=""><li className='hover:text-rose-500'>Skills</li></a>
             <a href=""><li className='hover:text-rose-500'>Experience</li></a>
             <a href=""><li className='hover:text-rose-500'>Project</li></a>
-          </ul>
+          </ul> */}
+          <motion.p
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+
+            className='my-4'><span className='font-bold'>
+              📍Location : </span>{CONTACT.Location}</motion.p>
+
+          <motion.p
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1 }}
+            className='my-4'><span className='font-bold'>📞Contact : </span>{CONTACT.phoneNo}</motion.p>
+
+          <a href='mailto:ashikahamed2217@gmail.com'><p className='my-4 hover:underline'><span className='font-bold'>📩 Email : </span>{CONTACT.email}</p></a>
+
         </div>
         <div>
           <motion.h2

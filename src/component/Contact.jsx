@@ -31,7 +31,8 @@ const Contact = () => {
             setname("")
             setemail("")
             setmessage("")
-            toast.success("Your form Submited Successfully")
+            
+            toast.success("Form Submited Successfully")
         }
     }
     return (
@@ -43,24 +44,9 @@ const Contact = () => {
                 className='text-center my-10 text-4xl'>Get in Touch</motion.h2>
             <div className='text-center tracking-tighter'>
 
-                <motion.p
-                    whileInView={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: 100 }}
-                    transition={{ duration: 1 }}
-
-                    className='my-4'><span className='font-bold'>
-                        📍Location : </span>{CONTACT.Location}</motion.p>
-                <motion.p
-                    whileInView={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: -100 }}
-                    transition={{ duration: 1 }}
-                    className='my-4'><span className='font-bold'>📞Contact : </span>{CONTACT.phoneNo}</motion.p>
-                <a href='mailto:ashikahamed2217@gmail.com'><p className='my-4 hover:underline'><span className='font-bold'>📩 Email : </span>{CONTACT.email}</p></a>
-
-
             </div>
             <div className='mt-25 flex flex-col items-center'>
-                <form onSubmit={handlesubmit} className='p-4 md:p-6 rounded-2xl'>
+                <form onSubmit={handlesubmit} className='p-4 md:p-6 rounded-2xl '>
 
                     <label htmlFor="" className='flex flex-row'>Name</label>
                     <input type="text"

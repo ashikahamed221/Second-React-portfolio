@@ -17,6 +17,7 @@ const Project = () => {
             transition={{ duration: 0.5 }}
             className='w-full  justify-center lg:w-1/4'>
             <img width={150} height={150} className='mb-6 rounded' src={project.image} alt={project.title} />
+
           </motion.div>
 
           <motion.div
@@ -24,7 +25,33 @@ const Project = () => {
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1 }}
             className='w-full max-w-xl lg:w-3/4'>
-            <h6 className='mb-2 font-semibold'>{project.title}</h6>
+            <h6 className='mb-2 font-semibold text-2xl'>{project.title}</h6>
+          
+          <div className='flex space-x-4 mb-2'>
+              {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 py-1 px-2 font-medium text-sm bg-neutral-600 rounded hover:underline"
+              >
+                Visit Project
+              </a>
+            )}
+              {project.git && (
+              <a
+                href={project.git}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 py-1 px-2 text-sm font-medium hover:underline bg-neutral-600 rounded"
+              >
+                Github Link
+              </a>
+            )}
+          </div>
+
+            
+
 
             <p className='mb-4 text-neutral-400'>{project.description}</p>
             {project.technologies.map((tech, index) => (

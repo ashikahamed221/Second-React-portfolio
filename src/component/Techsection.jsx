@@ -1,6 +1,6 @@
 import { SiReact } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -62,8 +62,8 @@ const Techsection = () => {
           initial="initial"
           animate="animate"
           className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <SiMongodb className='text-7xl text-green-500 ' />
-          <p className="text-center text-sm font-bold mt-2 fonts">Mongodb</p>
+          <IoLogoFirebase className='text-7xl text-yellow-400 ' />
+          <p className="text-center text-sm font-bold mt-2 fonts">Firebase</p>
         </motion.div>
 
         <motion.div
