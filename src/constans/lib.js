@@ -8,7 +8,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAzdFOJ_h9mYcZFTuJmWDtACqlE4XcRvEw",
+  apiKey: "",
   authDomain: "second-react-portfolio.firebaseapp.com",
   projectId: "second-react-portfolio",
   storageBucket: "second-react-portfolio.firebasestorage.app",
