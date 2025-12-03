@@ -8,14 +8,14 @@ import About from './component/About.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
+    <App />
 
-    <BrowserRouter>
+    {/* <BrowserRouter>
        <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/ashikportfolio' element={<App/>}/>
        </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
   </StrictMode>,
 
 )

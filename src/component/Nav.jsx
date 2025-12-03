@@ -8,7 +8,8 @@ const Nav = () => {
     <nav className='mb-20 flex items-center justify-between py-6'>
       <div className='flex items-center'>
         <h1 className='font-thin text-4xl text-gradient-to-r'>
-          AA
+          <span>A</span>
+          <span>A</span>
         </h1>
       </div>
 

@@ -1,6 +1,7 @@
 import { PROJECTS } from '../constans/index.js'
 import { motion } from 'framer-motion'
 const Project = () => {
+
   return (
     <div className='border-b border-neutral-900 pb-4'>
       <motion.h1
@@ -15,7 +16,7 @@ const Project = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            className='w-full  justify-center lg:w-1/4'>
+            className='w-full justify-center lg:w-1/4'>
             <img width={150} height={150} className='mb-6 rounded' src={project.image} alt={project.title} />
 
           </motion.div>
