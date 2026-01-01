@@ -54,7 +54,7 @@ const Hero = () => {
             initial={{x : 100, opacity: 0}}
             animate={{x : 0, opacity: 1}}
             transition={{duration:1, delay: 1.2}}
-            src="https://www.aalpha.net/wp-content/uploads/2020/12/full-stack-development.gif" className='rounded' />
+            src="src/assets/fullstack.gif" className='rounded'/>
           </div>
         </div>
       </div>

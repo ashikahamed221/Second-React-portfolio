@@ -20,19 +20,23 @@ const Contact = () => {
             toast.error("Please Enter Your Details")
         }
         else {
+            try {
+                await addDoc(collection(db, "form"), {
 
-            await addDoc(collection(db, "form"), {
-
-                name: name,
-                email: email,
-                message: message,
-                createAT: serverTimestamp()
-            })
-            setname("")
-            setemail("")
-            setmessage("")
-            
-            toast.success("Form Submited Successfully")
+                    name: name,
+                    email: email,
+                    message: message,
+                    createAT: serverTimestamp()
+                })
+                setname("")
+                setemail("")
+                setmessage("")
+                
+                toast.success("Form Submitted Successfully")
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                toast.error("Failed to submit form. Please try again.")
+            }
         }
     }
     return (
@@ -55,9 +59,9 @@ const Contact = () => {
                     hover:border-blue-600' placeholder='Enter Your Name' />
 
                     <label htmlFor="" className='flex flex-row mt-4'>Email </label>
-                    <input type="text"
+                    <input type="email"
                         value={email} onChange={(e) => setemail(e.target.value)}
-                        required className='bg-neutral-300 fonts py-2 px-6 md:w-100 rounded text-black mt-3' placeholder='Enter Your Name' />
+                        required className='bg-neutral-300 fonts py-2 px-6 md:w-100 rounded text-black mt-3' placeholder='Enter Your Email' />
 
                     <label htmlFor="" className='flex flex-row mt-4'>Message </label>
 
